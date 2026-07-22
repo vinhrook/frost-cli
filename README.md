@@ -92,15 +92,6 @@ src/
 ├── checker.rs    # Static product safety profiles & boundary checks
 └── history.rs    # Serde JSON load & save handling
 ```
-
----
-
-## 🚀 Running Locally
-
-```bash
-git clone https://github.com/YOUR_USERNAME/frost-cli.git
-cd frost-cli
-cargo run -- convert 23 C to F
 ```
 
 ---
