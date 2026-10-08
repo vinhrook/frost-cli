@@ -1,4 +1,4 @@
-# ❄️ frost-cli
+#  frost-cli
 
 Cold chain monitoring should be dead simple. If a warehouse operator or pharmacy technician needs to verify whether a batch of vaccines or milk is at a safe storage temperature, they shouldn't have to fight with rigid CLI flags like `--unit C --to F`.
 
@@ -6,7 +6,7 @@ Cold chain monitoring should be dead simple. If a warehouse operator or pharmacy
 
 ---
 
-## ⚡ How it works
+##  How it works
 
 I built `frost-cli` with a dual-mode argument resolver. You can type commands naturally in plain English or use standard flags if you're scripting it inside a automated pipeline.
 
@@ -51,14 +51,14 @@ Input Temp:  4.0°C
 Normalized:  4.0°C
 Safe Range:  2.0°C to 8.0°C
 ------------------------------------------
-Status:      ✅ SAFE (Within Cold Chain Limits)
+Status:       SAFE (Within Cold Chain Limits)
 Note:        Requires strict WHO cold chain standard (2°C - 8°C). Risk of loss of potency if breached.
 ==========================================
 ```
 
 If a temperature breach occurs (e.g., checking 12°C for a vaccine):
 ```text
-Status:      🔥 CRITICAL HIGH (TOO HOT / SPOILAGE RISK)
+Status:      CRITICAL HIGH (TOO HOT / SPOILAGE RISK)
 ```
 
 Supported product profiles out of the box: `vaccine`, `blood`, `insulin`, `milk`, `meat`, `chocolate`, `ice cream`.
@@ -73,7 +73,7 @@ cargo run -- history
 
 ---
 
-## 🛠️ Under the hood
+## Under the hood
 
 Built purely in Rust with a clean, light footprint:
 
@@ -96,6 +96,6 @@ src/
 
 ---
 
-## 📜 License
+##  License
 
 MIT License. Free to use, modify, and distribute.
